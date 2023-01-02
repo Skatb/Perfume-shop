@@ -1,0 +1,996 @@
+body {
+    margin: 0;
+    background-color: #080203;
+    height: 100%;
+}
+body._lock {
+    overflow: hidden;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;    
+}
+[class*="__container"] {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 138px;
+}
+
+.header_logo {
+    padding: 60px 0;
+    position: relative;
+    z-index: 5;
+}
+.Abstract-left {
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+.menu_list {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 60px;
+}
+.menu_item:not(:last-child) {
+    padding-right: 75px;
+}
+.menu_link {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.menu_link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B2405D;
+    transition: transform 0.4s ease-out;   
+}
+.menu_link:hover:after {
+    cursor: '';
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.header_burger {
+    position: relative;
+}
+.header_burger-img {
+    padding: 40px 0;
+}
+.Abstract-right {
+    position: absolute;
+    top: -5px;
+    left: 88px;
+}
+.header_content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 175px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.background-image_container {
+    background-image: url('../img/Abstract_main-menu.png');
+    background-repeat: no-repeat;
+}
+.Pure {
+    position: absolute;
+    top: 175px;
+    left: 510px;
+    pointer-events: none;
+}
+.Abstract_main-menu {
+    position: absolute;
+    top: 0px;
+}
+.header-title {
+    max-width: 441px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 90px;
+    color: #FFFFFF;
+    letter-spacing: -0.04em;
+    padding-right: 82px;
+    padding-top: 42px;
+}
+.header_content-about {
+    padding-left: 89px;
+    display: inline-block;
+    position: relative;
+    max-width: 353px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FCFBFB;
+    padding-top: 30px;
+}
+.header_content-about:before {
+    position: absolute;
+    left: 0;
+    top: 38px;
+    content: '';
+    width: 78px;
+    height: 2px;
+    background: #C4C4C4;
+}
+.Perfume-givenchy {
+    max-height: 350px;
+    max-width: 377px;
+    padding-top: 34px;
+    padding-right: 25px;
+}
+.Perfume-Victoria {
+    display: block;
+}
+.slider {
+    width: 350px;
+    height: 397px;
+    overflow: hidden;
+}
+.slider-line {
+    height: 397px;
+    width: 700px;
+    display: flex;
+    position: relative;
+    left: 10px;
+    transition: all ease 1s;
+}
+.Perfume_button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background-color: #B2405D;
+    width: 160px;
+    height: 58px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.Perfume_button:hover {
+    border-radius: 0;
+    font-size: 18px;
+}
+.reverse-block {
+    display: block;
+}
+.Play-button {
+    width: 60px;
+    height: 60px;
+    padding-left: 25px;
+}
+.Perfume-info {
+    display: flex;
+    padding-top: 71px;
+}
+.Perfume-about {
+    padding-top: 180px;
+    padding-left: 62px;
+}
+.Perfume-details {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #E7E6E6;
+    padding-bottom: 10px;
+}
+.Perfume-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 40px;
+    color: #fff;
+    padding-bottom: 21px;
+}
+.Perfume-stars {
+    padding-bottom: 9px;
+}
+.Perfume-weight {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #E7E6E6;
+    padding-bottom: 60px;
+}
+.Perfume_arrow-left {
+    display: inline-block;
+    cursor: pointer;
+}
+.Perfume_arrow-right {
+    display: inline-block;
+    margin-left: -4px;
+    cursor: pointer;
+}
+.Header_content-navigation {
+    min-height: 209px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 175px;
+    padding-bottom: 66px;
+    position: relative;
+}
+.Header_content-description {
+    position: relative;
+    border-top: 1px solid #3A1B22;
+    border-bottom: 1px solid #3A1B22;
+    cursor: pointer;
+}
+.Header_content-description:not(:last-child) {
+    border-top:    1px solid #3A1B22;
+    border-right:  1px solid #3A1B22; 
+    border-bottom: 1px solid #3A1B22;
+}
+.perfume {
+    border-left: #3A1B22;
+}
+.Header_content-description:hover {
+    border-color:#B2405D;
+    transition: 0.5s ease-out;
+    box-shadow: 10px 5px 5px 5px #000;
+}
+.nav-number {
+    color: #FF678E;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+.nav-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+    padding-right: 61px;   
+}
+.nav-description:not(:first-child) {
+    padding-left: 70px;
+}
+.compound_container {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 100px;
+}
+.compound_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 66px;
+    color: #fff;
+    padding-left: 175px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.compound_description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.35);
+    width: 536px;
+    padding-left: 175px;
+}
+.compound_arrows {
+    margin-top: auto;
+}
+.arrow-button_prev {
+    display: inline-block;
+    cursor: pointer;
+}
+.arrow-button_next {
+    display: inline-block;
+    margin: -4px;
+    cursor: pointer;
+}
+.compound-slider {
+    display: flex;
+    text-align: center;
+    min-width: 0;
+    width: 1120px;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+.compound-wrapper {
+    display: inherit;
+}
+.compound-slide {
+    width: 290px;
+    min-height: 408px;
+    padding-top: 115px;
+    border: 1px solid #303030;
+    border-radius: 15px;
+}
+.compound-slide:hover {
+    background-image: url("../img/Ellipse757.svg");
+    background-position: center;
+    background-color: #140f10;
+    transition: 0.6s ease;
+}
+.slider-img {
+    padding-bottom: 40px;
+}
+.compound-header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    padding-bottom: 16px;
+}
+.compound-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #5F5B5B;
+}
+.slider-ellipse {
+    position: absolute;
+    left: 470px;
+}
+.Perfume-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: none;
+}
+.Perfume-container_product {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.6em;
+    color: #FF678E;
+    padding-left: 175px;
+    margin-bottom: 15px;
+}
+.Perfume-container_header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    padding-left: 175px;
+    max-width: 426px;
+}
+.Perfume-slider {
+    overflow: hidden;
+}
+.Perfume-slider_arrows {
+    padding-right: 94px;
+    margin-top: 134px;
+}
+.Perfume-slider-left {
+    display: inline-block;
+    cursor: pointer;
+}
+.Perfume-slider-right {
+    display: inline-block;
+    margin-left: -4px;
+    cursor: pointer;
+}
+.Perfume-slider_wrapper {
+    display: flex;
+    margin-left: 140px;
+}
+.Perfume-slider_slide {
+    width: 655px;
+    height: 348px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+    background-image: url('../img/Ellipse757.svg');
+    background-position: -50px 0px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    padding-top: 115px;
+}
+.Perfume-slider_number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 66px;
+    color: #FFFFFF;
+    padding-top: 208px;
+    padding-right: 46px;
+}
+.Perfume-slider_header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.Perfume-slider_desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 48px;
+}
+.Perfume-slider_about{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    text-decoration-line: underline;
+    color: #fff;
+}
+.Perfume-slider-img1 {
+    width: 232px;
+    height: 250px;
+    padding-top: 40px;
+    padding-right: 46px;
+}
+.Perfume-slider-img2 {
+    width: 232px;
+    height: 292px;
+}
+.footer {
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 76px;
+    margin-bottom: 61px;
+}
+.footer-logo {
+    padding-top: 27px;
+}
+.email-input {
+    width: 70%;
+    height: 65px;
+    background: #140e0f;
+    border-radius: 36px 0 0 36px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.55);
+    padding-left: 16px;
+    border-right-color:#140e0f;
+    border-right-width: 0px;
+    border-color: #060505;
+}
+.email-input:focus {
+    outline: none;
+}
+.form_body {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    align-items: center;
+}
+.email__button-background {
+    background-color: #140e0f;
+    height: 67px;
+    border-radius: 0 36px 36px 0;
+    border-width: 0px;
+    cursor: pointer;
+}
+.social-networks {
+    padding-top: 35px;
+
+}
+.email_mobile-icon {
+    display: none;
+    padding: 5px 5px 0 0;
+}
+.social-networks_link {
+    padding-right: 25px;
+    cursor: pointer;
+}
+.social-youtube {
+    padding-bottom: 2px;
+}
+.footer-desc {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+.copyright {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.35);
+}
+.footer-nav_block {
+    display: flex;
+    gap: 40px;
+}
+.footer-nav {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+.footer-nav:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B2405D;
+    transition: transform 0.4s ease-out;   
+}
+.footer-nav:hover:after {
+    cursor: '';
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.sign {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #655E60;
+}
+@media (max-width: 1199.98px){
+    [class*="__container"] {
+        max-width: 970px;
+    }
+    .header_logo {
+        padding-left: 25px;
+    }
+    .header_content {
+        padding: 0 10px 0 10px;
+        margin-bottom: 15px;
+    }
+    
+    .header_content-about {
+        padding-left: 55px;
+    }
+    .header_content-about::before {
+        width: 46px;
+    }
+    .header-title {
+        font-size: 60px;
+        line-height: 70px;
+        padding-right: 0;
+    }
+    .Perfume-about {
+        padding-left: 0px;
+        padding-top: 135px;
+    }
+    .Pure {
+        left: -5%;
+    }
+    .background-image_container {
+        background-position: -150px -100px;
+    }
+    .Header_content-navigation {
+        padding-left: 0;
+        min-height: 140px;
+    }
+    .nav-description {
+        font-size: 16px;
+    }
+    .nav-number {
+        padding-top: 35px;
+    }
+    .compound-slider {
+        margin:0 auto;
+    }
+    .Perfume-slider_wrapper {
+        margin-left: 0;
+    }
+    .Perfume-slider_desc {
+        max-width: 350px;
+    }
+    
+}
+@media (max-width: 990.98px){
+    [class*="__container"] {
+        max-width: 750px;
+    }
+    .header-title {
+        padding-top: 0;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .header_content-about {
+        padding-left: 0;
+    }
+    .header_content-about::before {
+        display: none;
+    }
+    .Perfume-givenchy {
+        max-height: 305px;
+        max-width: 305;
+        padding-right: 70px;
+    }
+    .Perfume-Victoria {
+        max-height: 292px;
+        max-width: 377px;
+    }
+    .Perfume-about {
+        margin: -55px 0px 0px -55px;
+    }
+    .nav-description:not(:first-child) {
+        padding-left: 30px;
+    }
+    .nav-number {
+        padding-left: 30px;
+    }
+    .nav-description {
+        font-size: 13px;
+    }
+    .Perfume-info {
+        padding-top: 0;
+    }
+    .compound_name {
+        padding-left: 0;
+    }
+    .compound_description {
+        padding-left: 0;
+    }
+    
+    .Perfume-slider_number {
+        display: none;
+    }
+    .swiper-slide {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 769.98px){
+    [class*="__container"] {
+        max-width: none;
+    }
+    .menu__icon {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        top: 37%;
+        right: 115%;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+    }
+    
+    .menu__icon::before,
+    .menu__icon::after {
+        content: "";
+    }
+    .menu__icon::before {
+        top: 0;
+    }
+    .menu__icon::after {
+        bottom: 0;
+    }
+    .menu__icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu__icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu__icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    
+    .menu__icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.9);
+        padding-top: 70px;
+        transition: left 0.3s ease 0s;
+        z-index: 2;
+        overflow: auto;
+    }
+    .menu__body._active {
+        left: 0;
+        padding-left: 50px;
+        background-color: #010101;
+    }
+    .menu__body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100px;
+    }
+    .menu_list {
+        flex-direction: column;
+        position: relative;
+        right:0px;
+        top: 0px;
+    }
+    .menu_item:not(:last-child) {
+        padding-right: 0px;
+    }
+    .menu_list > li {
+        margin: 0px 0px 30px 0px;;
+    
+    }
+    .header-title {
+        margin: 0 auto;
+    }
+    .header_content {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        pointer-events: none;
+    }
+    .Perfume_arrow-left,
+    .Perfume_arrow-right {
+        pointer-events: auto;
+    }
+    .slider {
+        margin: 0 auto;
+        height: 350px;
+        padding-left: 80px;
+    }
+    .reverse-block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Perfume-container_header {
+        margin: 0 auto;
+    }
+    
+    .Perfume-slider_arrows {
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    .Perfume-slider_arrows 
+    .slider-line {
+        pointer-events: none;
+    }
+    .Perfume-givenchy {
+        max-height: 270px;
+    }
+    .Perfume-Victoria {
+        max-height: 320px;
+        padding-left: 34px;
+    }
+    .arrows_first-slider {
+        margin: -60px 0 0 -54px;
+    }
+    
+    .Perfume-about {
+        margin: -115px 0px 0px -55px;
+        pointer-events: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Perfume-info {
+        padding-top: 0;
+    }
+    .Header_content-navigation {
+        display: none;
+    }
+    .Play-button {
+        display: none;
+    }
+    .Perfume-weight {
+        padding-bottom: 10px;
+    }
+    .Perfume_button {
+        margin: 0 auto;
+    }
+    .compound-slider {
+        padding-bottom: 100px;
+        width: 600px;
+        pointer-events: none;
+    }
+    .Perfume-container_product {
+        padding-left: 0;
+    }
+    
+    .Perfume-container_header {
+        padding-left: 0;
+    }
+    .compound_arrows {
+        z-index: 6;
+    }
+    .Perfume-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        max-width: 500px;
+    }
+    .footer-header {
+        display: block;
+    }
+    .footer-logo,
+    .footer-nav_block {
+        display: none;
+    }
+    .social-networks {
+        text-align: center;
+    }
+    .Perfume-container_product {
+        text-align: center;
+    }
+    .Perfume-container_header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 660.98px) {
+    .compound_description {
+        max-width: 309px;
+        margin: 0 auto;
+    }
+    .compound_container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        align-items: center;
+    }
+    .compound_arrows {
+        margin-top: 40px;
+    }
+    .Perfume-slider_arrows {
+        margin-top: 25px;
+    }
+    
+}
+
+@media (max-width: 550.98px) {
+    .slider {
+        margin-right: -20px;
+        height: 340px;
+        padding-left: 10%;
+    }
+    .Perfume-slider_header {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .Perfume-slider_desc {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .Perfume-container_header {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .compound_name {
+        font-size: 33px;
+        margin-top: 10px;
+    }
+    .compound-slide {
+        min-height: 330px;
+        padding-top: 50px;
+    }
+    .compound-slider {
+        padding-bottom: 30px;
+    }
+    .Perfume-slider_slide {
+        max-width: 400px;
+        padding-top: 70px;
+    }
+    .Perfume-slider-img1,
+    .Perfume-slider-img2 {
+        width: 217px;
+        height: 200px;
+        padding-right: 10px;
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    .Perfume-slider_slide {
+        height: 280px;
+    }
+    .Perfume-slider_arrows {
+        margin: auto;
+        padding-top: 30px;
+    }
+    .footer-header {
+        padding-top: 0;
+    }
+    .footer-header {
+        margin-top: 15px;
+    }
+    .email-link_img {
+        display: none;
+    }
+    .email_mobile-icon{
+        display: block;
+    }
+}
+@media (max-width: 350.98px) {
+    .Perfume-slider_header {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .Perfume-slider_about {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .email-link {
+        right: 0;
+        top: 8px;
+    }
+    .email_mobile-icon {
+        display: block;
+        padding-left: 0;
+    }
+    .footer-desc {
+        flex-direction: column;
+    }
+    .copyright {
+        margin-bottom: 10px;
+    }
+}
